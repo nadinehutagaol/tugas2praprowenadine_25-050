@@ -1,0 +1,126 @@
+/* Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background: #e2b3fc;
+  line-height: 1.6;
+}
+
+/* ================= Login ================= */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+form {
+  background: rgb(68, 104, 235);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+  width: 300px;
+  text-align: center;
+}
+
+form h2 { margin-bottom: 15px; }
+
+input {
+  width: 90%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 4px solid #aacff9;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  background: #53d4d8;
+  color: rgb(244, 242, 242);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:hover { background: #180d41; }
+
+/* ================= Navbar ================= */
+nav {
+  background: #5534db;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+nav a {
+  color: rgb(250, 247, 247);
+  margin: 0 10px;
+  text-decoration: none;
+}
+nav a:hover {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+nav input[type="text"] {
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  margin-left: auto;
+}
+
+/* ================= Card Produk ================= */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  padding: 20px;
+}
+
+.card {
+  background: rgb(39, 52, 195);
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 3px 6px rgb(0, 0, 0);
+  transition: 0.3s;
+  text-align: center;
+}
+.card img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+.card:hover { background: #6a67ff; }
+
+/* ================= Iklan ================= */
+.banner {
+  background: #dd32ff;
+  color: rgb(58, 7, 71);
+  text-align: center;
+  padding: 15px;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+/* ================= Tabel ================= */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 15px 0;
+  background: rgb(245, 187, 235);
+}
+th, td {
+  padding: 10px;
+  border: 1px solid #4e0c5c;
+  text-align: center;
+}
+th {
+  background: #982be0;
+  color: rgb(87, 13, 65);
+}
+
+/* ================= Responsif ================= */
+@media (max-width: 600px) {
+  nav { flex-direction: column; align-items: flex-start; }
+  nav input[type="text"] { margin: 10px 0 0 0; width: 100%; }
+  form { width: 90%; }
+}
